@@ -23,6 +23,9 @@ class BusinessesViewController: UIViewController, UITableViewDelegate, UITableVi
             
             self.businesses = businesses
             self.tableView.reloadData()
+            self.tableView.rowHeight = UITableViewAutomaticDimension
+            self.tableView.estimatedRowHeight = 120
+            
             if let businesses = businesses {
                 for business in businesses {
                     print(business.name!)
@@ -62,9 +65,9 @@ class BusinessesViewController: UIViewController, UITableViewDelegate, UITableVi
         }
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return CGFloat(135)
-    }
+//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        return CGFloat(135)
+//    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
