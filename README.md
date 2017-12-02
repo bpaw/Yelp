@@ -1,4 +1,4 @@
-# Project 3 - Yelo
+# Project 3 - Yelp
 
 Yelo is a clone of Yelp to search for restaurants using the [Yelp API](http://www.yelp.com/developers/documentation/v2/search_api).
 
